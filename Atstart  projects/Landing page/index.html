@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Landing page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+      
+        <nav>
+            <ul class="sidebar">     
+                   
+              <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> 
+              <li > <a href="#">Home</a></li> 
+               <li ><a href="#">About</a></li>
+               <li><a href="#">Service</a></li> 
+               <li> <a href="#">Contact</a></li>  
+            </ul>
+            
+
+            <ul>
+          
+                <li  class="hideonMobile"> <a href="#">Home</a></li> 
+                 <li class="hideonMobile"><a href="#">About</a></li>
+                 <li class="hideonMobile"><a href="#">Service</a></li> 
+                 <li class="hideonMobile"><a href="#">Contact</a></li> 
+                 <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> 
+              </ul>
+        </nav>
+   
+    <main>
+        <section>
+            <h1>Empowering Growth, One</h1>
+            <h1>Code at a Time</h1>
+            <p>Tech Mentorship offers IT services and consultancy that</p>
+            <p>specialize in creating innovative solutions for businesses.</p>
+            <p>We believe in the power of technology to transform the world.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+               
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/tech-mentorship-tm" target="_blank"><img src="img/Linkedin_icon.jpg" alt="LinkedIn"></a>
+                <!-- WhatsApp Icon -->
+                <a href="https://chat.whatsapp.com/LZO9hYZ1JUKCNSYOZ76JVB" target="_blank"><img src="img/whatsapp_icon.jpg" alt="WhatsApp"></a>
+                <!-- Telegram Icon -->
+                <a href="https://t.me/TechMentorshipCommunity" target="_blank"><img src="img/Telegram_icon.jpg" alt="Telegram"></a>
+                <!-- YouTube Icon -->
+                <a href="https://www.techmentorship.ninja/" target="_blank"><img src="img/crome_icon.jpg" alt="chrom"></a>
+            </div>
+        </div>
+    </footer>
+<script>
+    function showsidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hidesidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+
+</script>
+    
+</body>
+</html>
