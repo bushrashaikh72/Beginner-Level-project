@@ -20,7 +20,7 @@ A basic calculator application that performs standard mathematical operations li
 **Features:**
 - Interactive user interface with number and operation buttons
 - Display screen to show current input and results
-- Supports addition, subtraction, multiplication, and division
+- Supports  basic math operations.
 
 **Technologies Used:**
 - HTML
